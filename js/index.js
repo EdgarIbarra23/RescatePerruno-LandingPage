@@ -27,19 +27,8 @@ const urlUsers = "https://randomuser.me/api/?results=5";
 const urlPaises = "https://restcountries.com/v3.1/all";
 
 // ----------------------------------------------------------------------------
-// Llamar a la Random User API
-const getApiUsers = async(URL) => {
-    try {
-        const respuesta = await fetch(URL)
-        const data = await respuesta.json();
-        return data.results;
-    } catch (err) {
-        console.log(err)
-    }
-}
-
-// Llamar a la API de Paises "restcountries"
-const getApiPaises = async(URL) => {
+// Llamar a las APIs
+const getApis = async(URL) => {
     try {
         const respuesta = await fetch(URL)
         const data = await respuesta.json();
@@ -81,15 +70,15 @@ const createPaises = (countries) => {
 // ----------------------------------------------------------------------------
 // Colocar la Card con info de la API al DOM
 const getUsers = async () => {
-    const users = await getApiUsers(urlUsers)
+    const usersData = await getApis(urlUsers);
+    const users = usersData.results;
     users.map( user => createUsers(user));
 }
-window.addEventListener("DOMContentLoaded", getUsers);
 
 // Colocar los Option al Select del DOM
 const getPaises = async () => {
-    const paises = await getApiPaises(urlPaises);
-
+    const paises = await getApis(urlPaises);
+    
     if (paises) {
         // Para ordenar los elementos del abecedario
         paises.sort((a, b) => a.name.common.localeCompare(b.name.common));
@@ -97,6 +86,7 @@ const getPaises = async () => {
     }
 }
 
+window.addEventListener("DOMContentLoaded", getUsers);
 window.addEventListener("DOMContentLoaded", getPaises);
 
 
