@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rescate Perruno</title>
+    <link rel="shortcut icon" href="./img/dog-api-logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link href="./lib/aos/aos.css" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header-container" id="header">
+        <nav class="navbar">
+            <a href="" class="logo"><i class="fa-solid fa-paw"></i> RESCATE PERRUNO</a>
+            <input type="checkbox" id="toggle">
+            <label for="toggle" id="iconToggle">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+            <div class="menu">
+                <ul class="list">
+                    <li>
+                        <a href="#section#1">Inicio</a>
+                    </li>
+
+                    <li>
+                        <a href="#dedicacion">Dedicación</a>
+                    </li>
+
+                    <li>
+                        <a href="#mision">Misión</a>
+                    </li>
+
+                    <li>
+                        <a href="#vision">Visión</a>
+                    </li>
+
+                    <li>
+                        <a href="#contactanos">Contactanos</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main">
+
+        <section class="info-container" id="section#1">
+            <div class="info-text">
+                <h1>¿QUIERES ADOPTAR UN PERRO?</h1>
+                <p>En <strong>Rescate Perruno</strong>, escoge al Perro que más te agrade.<br>¡Ven a visitarnos y descubre el compañero peludo que hará tu vida aún más especial!</p>
+                <a href="">Visitar</a>
+            </div>
+
+            <img src="./img/people-adopting-dog.svg" alt="Ilustración">
+        </section>
+
+        <section class="data-container">
+            <article class="data-info data-orange" id="dedicacion">
+                <img src="./img/people-adopting-dog-dedicacion.svg" alt="" data-aos="fade-up">
+                <div class="data-info-text" data-aos="fade-up">
+                    <h2 class="title-white">¿A qué nos dedicamos?</h2>
+                    <p>Nuestro refugio tiene como misión principal rescatar, cuidar y encontrar hogares amorosos para perros de todas las edades y razas. Contamos con una amplia variedad de caninos, desde cachorros juguetones hasta compañeros leales de edad más avanzada.</p>
+                </div>
+            </article>
+
+            <article class="data-info">
+                <div class="data-info-text" data-aos="fade-right">
+                    <h2>Misión</h2>
+                    <p>Nuestra misión es <strong>brindar amor, cuidado y refugio a los perros sin hogar o maltratados</strong>, trabajando incansablemente para encontrarles hogares permanentes donde puedan vivir una vida plena y feliz. </p>
+                </div>
+                <img src="./img/people-adopting-dog-mision.svg" alt="Misión" data-aos="fade-left">
+            </article>
+
+            <article class="data-info info-vision" id="vision-web">
+                <img src="./img/people-adopting-dog-vision.svg" alt="Visión" data-aos="fade-right">
+                <div class="data-info-text" data-aos="fade-left">
+                    <h2>Visión</h2>
+                    <p><strong>Ser un refugio de referencia en la comunidad</strong>, donde los perros en situación de vulnerabilidad encuentren un segundo hogar y donde las personas reciban educación sobre la importancia de la adopción responsable y el bienestar animal.</p>
+                </div>
+            </article>
+
+            <article class="data-info info-vision" id="vision-movil">
+                <img src="./img/people-adopting-dog-vision.svg" alt="Visión" data-aos="fade-right">
+                <div class="data-info-text" data-aos="fade-right">
+                    <h2>Visión</h2>
+                    <p><strong>Ser un refugio de referencia en la comunidad</strong>, donde los perros en situación de vulnerabilidad encuentren un segundo hogar y donde las personas reciban educación sobre la importancia de la adopción responsable y el bienestar animal.</p>
+                </div>
+            </article>
+        </section>
+
+        <section class="personal-container">
+            <article class="personal-info" data-aos="fade-up">
+                <h2>Clientes Satisfechos</h2>
+
+                <div class="all-personal" id="all-personal"></div>
+            </article>
+        </section>
+
+        <section class="formulario-contact" id="contactanos">
+            <p class="frase" data-aos="fade-left" id="frase-web">Adoptar un perro es darle una segunda oportunidad a un amigo leal y encontrar un compañero para toda la vida <i class="fa-solid fa-paw"></i></p>
+            <p class="frase" data-aos="fade-right" id="frase-movil">Adoptar un perro es darle una segunda oportunidad a un amigo leal y encontrar un compañero para toda la vida <i class="fa-solid fa-paw"></i></p>
+            <form action="" class="form" data-aos="fade-right">
+                <h2>Contáctanos</h2>
+                <p>Completa tu Información</p>
+                <div class="formulario">
+                    <div class="nombre-completo">
+                        <div>
+                            <label for="nombre">Nombre</label>
+                            <input type="text" id="nombre">
+                        </div>
+
+                        <div>
+                            <label for="apellido">Apellido</label>
+                            <input type="text" id="apellido">
+                        </div>
+                    </div>
+
+                    <div class="email-telefono">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+
+                    <div class="email-telefono telefono">
+                        <label for="telefono">Telefono</label>
+                        
+                        <div>
+                            <select name="paises" id="paises">
+                                <option value="" selected></option>
+                            </select>
+                            <input type="tel" id="telefono">
+                        </div>
+                    </div>
+
+                    <div class="btn">
+                        <button type="button"><i class="fa-solid fa-paper-plane"></i> Enviar</button>
+                    </div>
+                </div>
+            </form>
+        </section>
+
+    </main>
+
+    <footer id="footer">
+        <h2>RESCATE PERRUNO</h2>
+
+        <div class="contacto-container footer-info">
+            <h4>Contacto</h4>
+            <p><i class="fa-solid fa-location-dot"></i> Barranquilla - xxxx</p>
+            <p><i class="fa-solid fa-envelope"></i> rescateperrunofeliz@gmail.com</p>
+            <p><i class="fa-brands fa-whatsapp"></i> (+57) xxx-xxx-xxxx</p>
+            <p><i class="fa-solid fa-phone"></i> 605 xxx-xxxx</p>
+        </div>
+
+        <div class="redes-sociales-container footer-info">
+            <h4>Redes Sociales</h4>
+            <div class="iconos-redes">
+                <a href="https://www.facebook.com/?locale=es_LA" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://twitter.com/compose/tweet" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.tiktok.com/es/" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+            </div>
+            <p>© <span id="año"></span> Rescate Perruno</p>
+        </div>
+    </footer>
+
+    <script src="./js/index.js"></script>
+    <script src="https://kit.fontawesome.com/9bccd79f52.js" crossorigin="anonymous"></script>
+    <!-- Libreria AOS - para el Scrool -->
+    <script src="./lib/aos/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
