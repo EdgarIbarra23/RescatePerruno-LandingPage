@@ -1,6 +1,6 @@
 // Año Correspondiente del Copyright
 const año = new Date().getFullYear();
-// document.getElementById("año").textContent = año;
+document.getElementById("año").textContent = año;
 
 // Manejo del Icono del Toggle
 const toggle = document.getElementById("toggle");
